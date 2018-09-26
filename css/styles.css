@@ -1,0 +1,42 @@
+:root {
+  --lbl: lightblue;
+  --lye: lightyellow;
+  --lgr: lightgreen;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+header {
+  padding:
+}
+.main-block {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.block {
+  width: 33%;
+  float: left;
+  padding: 2%;
+}
+@media (max-width: 768px) {
+    .block {
+        width: 100%;
+    }
+}
+.block:first-child {
+  background-color: var(--lbl);
+}
+.block:nth-child(3n+2) {
+  background-color: var(--lye);
+}
+.block:last-child {
+  background-color: var(--lgr);
+}
+
+.footer {
+  height: 50px;
+  background-color: var(--lye);
+}
